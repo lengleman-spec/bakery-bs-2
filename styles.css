@@ -1,0 +1,11 @@
+.carousel-item img {
+  height: 60vh; /* 60% of viewport height */
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Make carousel arrows black using filter */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(0) sepia(1) saturate(1000%) hue-rotate(0deg) brightness(0);
+}
