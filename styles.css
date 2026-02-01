@@ -4,22 +4,19 @@
   width: 100%;
 }
 
-/* Make carousel arrows black using filter */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(0) sepia(1) saturate(1000%) hue-rotate(0deg) brightness(0);
-}
-
 .carousel-hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* color: white;*/
   color: white;
   text-align: left;
   z-index: 10;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+#carousel-container {
+  position: relative;
 }
 
 #carousel-container::before {
@@ -35,4 +32,30 @@
     rgba(0, 0, 0, 0.4)
   );
   z-index: 5;
+  pointer-events: none;
+}
+
+.carousel-control-label {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+#carousel-container button i {
+  color: white;
+  font-size: 3rem;
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Hide Bootstrap’s default arrows */
+.carousel-control-prev::before,
+.carousel-control-next::before {
+  content: none;
 }
