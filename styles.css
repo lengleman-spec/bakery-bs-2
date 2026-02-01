@@ -54,8 +54,14 @@
   transform: translateY(-50%);
 }
 
-/* Hide Bootstrap’s default arrows */
 .carousel-control-prev::before,
 .carousel-control-next::before {
   content: none;
+}
+
+/* About section */
+.about-us-container {
+  background: url(img/rustic-wood.jpg);
+  background-size: 100%;
+  background-position: center;
 }
