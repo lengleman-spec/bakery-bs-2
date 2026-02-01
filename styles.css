@@ -65,3 +65,11 @@
   background-size: 100%;
   background-position: center;
 }
+
+.about-us-container {
+  color: white;
+}
+
+.about-us-container h2 {
+  font-size: 2rem;
+}
