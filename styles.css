@@ -82,3 +82,8 @@ body {
 .about-us-container h2 {
   font-size: 2rem;
 }
+
+/* Menu */
+.menu-card-margin {
+  margin-top: 2rem;
+}
