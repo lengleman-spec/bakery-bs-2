@@ -1,10 +1,11 @@
 :root {
-  --primary-bg: #d4a373;
-  --text-color: #3e2c1c;
-}
-
-body {
-  background-color: var(--primary-bg);
+  --primary-bg: #fff7ed;
+  --text-main-color: #3a2e2a;
+  --text-secondary-color: #6b4f3f;
+  --btn-color: #c97c5d;
+  --btn-text: #ffffff;
+  --hover-color: #a65d3b;
+  --divider-color: #e6d5c3;
 }
 
 .carousel-item img {
@@ -66,6 +67,12 @@ body {
 .carousel-control-prev::before,
 .carousel-control-next::before {
   content: none;
+}
+
+/* Specials & Seasonal */
+
+.custom-bg {
+  background-color: var(--divider-color);
 }
 
 /* About section */
