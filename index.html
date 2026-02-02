@@ -285,7 +285,7 @@
 
     <!-- Create Accordian for FAQs -->
     <section class="faq-section">
-      <h2>FAQs</h2>
+      <h2 class="text-center py-4">FAQs</h2>
       <div class="container-fluid">
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
@@ -297,7 +297,8 @@
                 data-bs-target="#panelsStayOpen-collapseOne"
                 aria-expanded="true"
                 aria-controls="panelsStayOpen-collapseOne">
-                Do you offer custom pastries for special occasions?
+                <i class="fa-solid fa-cake-candles me-3"></i>
+                <span>Do you offer custom pastries for special occasions?</span>
               </button>
             </h2>
             <div
@@ -320,7 +321,8 @@
                 data-bs-target="#panelsStayOpen-collapseTwo"
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseTwo">
-                How far in advance should I place a custom order?
+                <i class="fa-regular fa-clock me-3"></i>
+                <span>How far in advance should I place a custom order?</span>
               </button>
             </h2>
 
@@ -335,6 +337,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Item 3 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
               <button
@@ -344,7 +348,10 @@
                 data-bs-target="#panelsStayOpen-collapseThree"
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseThree">
-                Do you offer gluten-free, dairy-free, or vegan options?
+                <i class="fa-solid fa-wheat-awn-circle-exclamation me-3"></i>
+                <span
+                  >Do you offer gluten-free, dairy-free, or vegan options?</span
+                >
               </button>
             </h2>
             <div
@@ -358,6 +365,61 @@
                 dairy-free, and vegan. Rest assured, all of our treats are baked
                 separate from other batches and equipment is cleaned after every
                 bake, ensuring a safe and delicous experience for everyone.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour">
+                <i class="fa-solid fa-mug-hot me-3"></i>
+                <span>Do you cater for large events/orders?</span>
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                Yes, we can accommodate large orders, but do not offer catering
+                in the traditional sense - all orders must be picked up or
+                delivered. We do not dispatch our bakers to work an event. All
+                large orders must be given a three week advance.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFive"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFive">
+                <i class="fa-solid fa-cookie-bite me-3"></i>
+                <span>Can you accommodate allergies?</span>
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingFive">
+              <div class="accordion-body">
+                We take food allergies seriously and offer a selection of items
+                made without common allergens such as gluten, dairy, or nuts.
+                While we carefully clean and sanitize our equipment between
+                batches, our kitchen does handle allergens, so we cannot
+                guarantee an entirely allergen-free environment. Please let us
+                know about any allergies when placing your order so we can guide
+                you toward the safest options.
               </div>
             </div>
           </div>

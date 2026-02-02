@@ -70,7 +70,6 @@
 }
 
 /* Specials & Seasonal */
-
 .custom-bg {
   background-color: var(--divider-color);
 }
@@ -110,4 +109,58 @@
 
 .discount-section h3 {
   color: white;
+}
+
+/* FAQ */
+.faq-section {
+  background: #471c01;
+  background: linear-gradient(
+    90deg,
+    rgba(71, 28, 1, 1) 0%,
+    rgba(121, 91, 9, 1) 30%,
+    rgba(94, 49, 3, 1) 100%
+  );
+}
+
+.faq-section .accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.faq-section .accordion-button {
+  background-color: var(--divider-color);
+  border-radius: 0.75rem;
+  font-weight: 600;
+  padding: 1.25rem 1.5rem;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.faq-section .accordion-button:hover {
+  background-color: #fdebdc;
+  transform: translateY(-2px);
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background-color: var(--divider-color);
+  color: var(--btn-color);
+  box-shadow: none;
+}
+
+.faq-section .accordion-item {
+  position: relative;
+}
+
+.faq-section .accordion-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background-color: var(--btn-color);
+  opacity: 0.6;
 }
