@@ -94,6 +94,11 @@
   margin-top: 2rem;
 }
 
+.custom-border {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
 /* Discount */
 .discount-section {
   background-image: url(img/coffee-bg.jpg);
@@ -163,4 +168,13 @@
   height: 100%;
   background-color: var(--btn-color);
   opacity: 0.6;
+}
+
+/* Footer */
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  text-decoration: none;
 }
