@@ -9,7 +9,7 @@
 }
 
 .carousel-item img {
-  height: 60vh; /* 60% of viewport height */
+  height: 60vh;
   object-fit: cover;
   width: 100%;
 }
@@ -71,7 +71,7 @@
 
 /* Specials & Seasonal */
 .custom-bg {
-  background-color: var(--divider-color);
+  background: linear-gradient(135deg, #fdebdc 0%, #f6c9a1 50%, #c97c5d 100%);
 }
 
 .card .badge {
@@ -109,6 +109,11 @@
   overflow: hidden;
 }
 
+.btn-color {
+  background-color: var(--btn-color);
+  color: var(--btn-text);
+}
+
 /* Discount */
 .discount-section {
   background-image: url(img/coffee-bg.jpg);
@@ -128,13 +133,21 @@
 
 /* FAQ */
 .faq-section {
-  background: #471c01;
   background: linear-gradient(
-    90deg,
-    rgba(71, 28, 1, 1) 0%,
-    rgba(121, 91, 9, 1) 30%,
-    rgba(94, 49, 3, 1) 100%
+    135deg,
+    rgba(255, 247, 237, 0.8) 0%,
+    /* creamy top, more opaque */ rgba(253, 205, 170, 0.75) 50%,
+    /* warm middle */ rgba(201, 124, 93, 0.7) 100% /* soft brown bottom */
   );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 1.5rem;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .faq-section .accordion-item {
