@@ -8,6 +8,18 @@
   --divider-color: #e6d5c3;
 }
 
+/* Navbar */
+.navbar {
+  background: rgba(253, 205, 170, 0.75);
+}
+
+.navbar-brand {
+  color: var(--text-main-color);
+}
+
+.nav-link:hover {
+  background-color: var(--hover-color);
+}
 .carousel-item img {
   height: 60vh;
   object-fit: cover;
@@ -202,7 +214,7 @@
 /* Footer */
 
 footer {
-  background-color: #c97c5d;
+  background-color: var(--btn-color);
   padding-bottom: 1.5rem;
 }
 
