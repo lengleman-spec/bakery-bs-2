@@ -17,6 +17,16 @@
   color: var(--text-main-color);
 }
 
+.navbar img {
+  height: auto;
+  width: 50px;
+  margin-left: 1rem;
+}
+
+.navbar-toggler {
+  margin-right: 1rem;
+}
+
 .nav-link:hover {
   background-color: var(--hover-color);
 }
