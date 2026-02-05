@@ -149,10 +149,8 @@
   );
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border-radius: 1rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  margin-bottom: 1.5rem;
+  padding: 1rem;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -202,12 +200,35 @@
 }
 
 /* Footer */
+
+footer {
+  background-color: #c97c5d;
+  padding-bottom: 1.5rem;
+}
+
 footer ul li {
   list-style-type: none;
 }
 
 footer ul li a {
   text-decoration: none;
+  color: var(--btn-text);
+}
+
+footer ul li a:hover {
+  color: var(--text-main-color);
+}
+
+footer h3 {
+  color: var(--text-main-color);
+  font-weight: 600;
+}
+
+.divider {
+  height: 3px;
+  width: 90%;
+  background-color: var(--text-main-color);
+  margin: 1rem auto;
 }
 
 @keyframes gradientShift {
