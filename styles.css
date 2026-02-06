@@ -101,7 +101,6 @@
   );
   background-size: 300% 300%;
   animation: gradientShift 20s ease infinite;
-  /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
 }
 
 .card .badge {
@@ -112,6 +111,12 @@
   text-transform: uppercase;
   top: -30px;
   left: -20px;
+}
+
+.custom-bg .card-img-top {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* About section */
@@ -142,6 +147,29 @@
 .btn-color {
   background-color: var(--btn-color);
   color: var(--btn-text);
+}
+
+div.row {
+  padding-bottom: 2rem;
+}
+
+.row.menu-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* optional spacing between cards */
+}
+
+.menu-row .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu-row .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Discount */
@@ -263,4 +291,8 @@ footer h3 {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 570px) {
 }

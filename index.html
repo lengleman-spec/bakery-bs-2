@@ -24,6 +24,7 @@
         <img src="img/bakery.png" alt="logo" />
         <a class="navbar-brand" href="#">Brookside Bakery</a>
       </div>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -120,8 +121,8 @@
       <h2 class="text-center py-5">Specials & Seasonals</h2>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card mb-5 w-75 mx-auto">
+          <div class="col-sm-12 col-md-6 col-lg-4 d-md-flex d-flex flex-column">
+            <div class="card mb-5 w-75 h-100 mx-auto">
               <img
                 src="img/thumbprint_pump.jpg"
                 class="card-img-top"
@@ -136,8 +137,9 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="card mb-5 w-75 mx-auto">
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 mb-3 d-md-flex d-flex flex-column">
+            <div class="card mb-5 w-75 h-100 mx-auto">
               <img
                 src="img/cookies_easter_eggs2.jpg"
                 class="card-img-top"
@@ -153,8 +155,9 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="card mb-5 position-relative w-75 mx-auto">
+          <div
+            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3 d-md-flex d-flex flex-column offset-md-3">
+            <div class="card mb-5 position-relative w-75 h-100 mx-auto">
               <img
                 src="img/macarons_choc.jpg"
                 class="card-img-top"
@@ -196,77 +199,66 @@
     </section>
 
     <!-- Menu section -->
-    <section class="custom-bg">
+    <section class="custom-bg menu-section">
       <div class="container-fluid">
         <h2 class="text-center py-5">Menu</h2>
         <div class="row">
-          <div class="col-12">
-            <div class="card w-75 mx-auto custom-border">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mx-auto menu-card-margin custom-border">
               <img
                 src="img/cookies_sunflower.jpg"
                 class="card-img-top"
                 alt="cookies" />
               <div class="card-body">
-                <h5 class="card-title">Cookies</h5>
+                <h5 class="card-title fw-bold">Cookies</h5>
                 <p class="card-text">
-                  Warm, comforting, and irresistibly soft, our cookies are made
-                  using traditional recipes and baked in small batches for the
-                  best flavor and freshness.
+                  Our sugar cookies are golden, buttery, and lightly crisp on
+                  the edges—perfectly balanced sweetness in every bite. A
+                  classic treat that never goes out of style.
                 </p>
                 <a href="#" class="btn btn-color"
-                  >See more
-                  <i class="fa-solid fa-chevron-right"></i>
-                </a>
+                  >See more <i class="fa-solid fa-chevron-right"></i
+                ></a>
               </div>
             </div>
+          </div>
 
-            <div class="row">
-              <div class="col">
-                <div class="card w-75 mx-auto menu-card-margin custom-border">
-                  <img
-                    src="img/cupcakes_choc.jpg"
-                    class="card-img-top"
-                    alt="cupcakes" />
-                  <div class="card-body">
-                    <h5 class="card-title">Cake & Cupcakes</h5>
-                    <p class="card-text">
-                      Our cakes and cupcakes are baked fresh using high-quality
-                      ingredients for a soft, moist crumb and balanced
-                      sweetness. Finished with smooth, handcrafted frosting,
-                      they’re perfect for birthdays, events, or everyday
-                      indulgence.
-                    </p>
-                    <a href="#" class="btn btn-color"
-                      >See more
-                      <i class="fa-solid fa-chevron-right"></i>
-                    </a>
-                  </div>
-                </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mx-auto menu-card-margin custom-border">
+              <img
+                src="img/cupcakes_choc.jpg"
+                class="card-img-top"
+                alt="cupcakes" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Cake & Cupcakes</h5>
+                <p class="card-text">
+                  Soft, moist, and topped with creamy, handcrafted frosting, our
+                  cakes and cupcakes are a delight for both the eyes and the
+                  taste buds.
+                </p>
+                <a href="#" class="btn btn-color"
+                  >See more <i class="fa-solid fa-chevron-right"></i
+                ></a>
               </div>
             </div>
+          </div>
 
-            <!-- 3rd card -->
-            <div class="row">
-              <div class="col">
-                <div
-                  class="card w-75 mx-auto menu-card-margin mb-5 custom-border">
-                  <img
-                    src="img/peach_pie.jpg"
-                    class="card-img-top"
-                    alt="pies" />
-                  <div class="card-body">
-                    <h5 class="card-title">Pies & Tarts</h5>
-                    <p class="card-text">
-                      From rustic pies to elegant tarts, our desserts are baked
-                      fresh with flaky crusts and rich fillings that highlight
-                      real, honest flavor.
-                    </p>
-                    <a href="#" class="btn btn-color"
-                      >See more
-                      <i class="fa-solid fa-chevron-right"></i>
-                    </a>
-                  </div>
-                </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mx-auto menu-card-margin custom-border">
+              <img src="img/peach_pie.jpg" class="card-img-top" alt="pies" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Pies & Tarts</h5>
+                <p class="card-text">
+                  From flaky, buttery crusts to rich, flavorful fillings, our
+                  pies and tarts are handcrafted to perfection. Every bite
+                  captures the essence of fresh, seasonal ingredients.
+                </p>
+                <a href="#" class="btn btn-color"
+                  >See more <i class="fa-solid fa-chevron-right"></i
+                ></a>
               </div>
             </div>
           </div>
