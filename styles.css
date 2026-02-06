@@ -294,5 +294,27 @@ footer h3 {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 570px) {
+/* Horizontal cards on medium screens */
+@media (min-width: 768px) {
+  .card-horizontal-md {
+    display: flex;
+    flex-direction: row; /* side-by-side */
+    align-items: stretch;
+  }
+
+  .card-horizontal-md .card-img-top {
+    width: 40%; /* image takes 40% of card width */
+    height: auto; /* let image keep aspect ratio */
+    object-fit: cover;
+    border-top-left-radius: 0.75rem; /* keep rounded corners */
+    border-bottom-left-radius: 0.75rem;
+  }
+
+  .card-horizontal-md .card-body {
+    width: 60%; /* text takes the rest */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+  }
 }
