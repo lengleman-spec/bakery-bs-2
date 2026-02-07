@@ -97,6 +97,7 @@
   overflow: hidden;
   min-height: 600px;
 }
+
 .custom-bg {
   background: linear-gradient(
     135deg,
@@ -302,9 +303,9 @@
 }
 
 /* Menu */
-.menu-card-margin {
-  margin-top: 2rem;
-}
+/* .menu-card-margin {
+  margin: 2rem 0;
+} */
 
 .custom-border {
   border-radius: 14px;
@@ -512,6 +513,26 @@ footer h3 {
 /* MEDIA QUERIES */
 /* Horizontal cards on medium screens */
 @media (min-width: 768px) {
+  .carousel-hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-hero-text p {
+    font-size: 1.25rem;
+  }
+
+  .specials-section .card-title {
+    font-size: 1.5rem;
+  }
+
+  .specials-section .card-text {
+    font-size: 1.2rem;
+  }
+
+  .about-us-container h2 {
+    font-size: 2rem;
+  }
+
   .card-horizontal-md {
     display: flex;
     flex-direction: row;
