@@ -310,6 +310,8 @@
 .custom-border {
   border-radius: 14px;
   overflow: hidden;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .btn-color {
@@ -553,5 +555,11 @@ footer h3 {
     flex-direction: column;
     justify-content: center;
     padding: 1.5rem;
+  }
+
+  .menu-section .col-md-6 .card {
+    width: 100% !important; /* fill column */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
