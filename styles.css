@@ -570,4 +570,18 @@ footer h3 {
   .discount-div {
     padding-left: 4rem;
   }
+
+  .faq-section .accordion-button {
+    font-size: 1.5rem;
+  }
+
+  .faq-section .accordion-body {
+    font-size: 1.25rem;
+  }
+
+  .faq-section h2,
+  .menu-section h2,
+  .specials-section h2 {
+    font-size: 2rem;
+  }
 }
