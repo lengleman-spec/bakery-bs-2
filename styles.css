@@ -124,6 +124,10 @@
   width: 100%;
 }
 
+.card-img-top {
+  max-height: 250px;
+}
+
 .specials-section .card {
   border-radius: 12px;
   border: 1px solid red;
@@ -188,6 +192,55 @@
   left: 90%;
   animation-delay: 1.5s;
   font-size: 2rem;
+}
+
+/* Spring petals animation */
+.spring-petals {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.spring-petals .petal {
+  position: absolute;
+  top: -50px;
+  font-size: 1.5rem;
+  animation-name: petalFloat;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 1;
+}
+
+/* Random horizontal positions and delays */
+.spring-petals .petal:nth-child(1) {
+  left: 10%;
+  animation-delay: 0.5s;
+}
+.spring-petals .petal:nth-child(2) {
+  left: 25%;
+  animation-delay: 1s;
+}
+.spring-petals .petal:nth-child(3) {
+  left: 50%;
+  animation-delay: 2s;
+}
+.spring-petals .petal:nth-child(4) {
+  left: 70%;
+  animation-delay: 1.5s;
+}
+.spring-petals .petal:nth-child(5) {
+  left: 90%;
+  animation-delay: 0.5s;
+}
+
+.spring-petals .petal:nth-child(odd) {
+  animation-duration: 12s;
 }
 
 /* About section */
@@ -366,15 +419,34 @@ footer h3 {
 
 @keyframes fall {
   0% {
-    transform: translateY(0) rotate(0deg);
+    top: -40px;
+    transform: rotate(0deg);
     opacity: 0;
   }
   10% {
     opacity: 1;
   }
   100% {
-    transform: translateY(300%) rotate(360deg);
-    opacity: 0.8;
+    top: 100%;
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes petalFloat {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(150px) translateX(20px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(350px) translateX(-30px) rotate(360deg);
+    opacity: 0;
   }
 }
 
