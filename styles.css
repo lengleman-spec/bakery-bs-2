@@ -243,6 +243,49 @@
   animation-duration: 12s;
 }
 
+.winter-snow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.winter-snow .snow {
+  position: absolute;
+  top: -40px;
+  font-size: 1.4rem;
+  opacity: 0;
+  animation: snowFall 10s linear infinite;
+}
+
+.winter-snow .snow:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.winter-snow .snow:nth-child(2) {
+  left: 30%;
+  animation-delay: 2s;
+  font-size: 1rem;
+}
+
+.winter-snow .snow:nth-child(3) {
+  left: 55%;
+  animation-delay: 4s;
+}
+
+.winter-snow .snow:nth-child(4) {
+  left: 75%;
+  animation-delay: 1.5s;
+  font-size: 1.1rem;
+}
+
+.winter-snow .snow:nth-child(5) {
+  left: 90%;
+  animation-delay: 3s;
+}
+
 /* About section */
 .about-us-container {
   background: url(img/rustic-wood.jpg);
@@ -446,6 +489,22 @@ footer h3 {
   }
   100% {
     transform: translateY(350px) translateX(-30px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes snowFall {
+  0% {
+    top: -40px;
+    transform: translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    transform: translateX(40px) rotate(360deg);
     opacity: 0;
   }
 }
