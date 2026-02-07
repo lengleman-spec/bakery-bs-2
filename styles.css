@@ -535,6 +535,16 @@ footer h3 {
     font-size: 2rem;
   }
 
+  .menu-section .row .card {
+    gap: 1.8rem;
+  }
+
+  .menu-section .col-md-6 .card {
+    width: 100% !important; /* fill column */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   .card-horizontal-md {
     display: flex;
     flex-direction: row;
@@ -557,9 +567,7 @@ footer h3 {
     padding: 1.5rem;
   }
 
-  .menu-section .col-md-6 .card {
-    width: 100% !important; /* fill column */
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  .discount-div {
+    padding-left: 4rem;
   }
 }
