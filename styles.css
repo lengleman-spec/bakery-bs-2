@@ -634,4 +634,8 @@ footer h3 {
       0 24px 55px rgba(58, 46, 42, 0.28);
     transform: translateY(-8px);
   }
+
+  .menu-section .card-title {
+    font-size: 1.5rem;
+  }
 }
