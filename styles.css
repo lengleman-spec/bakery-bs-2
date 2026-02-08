@@ -28,8 +28,10 @@
 }
 
 .nav-link:hover {
-  background-color: var(--hover-color);
+  /* background-color: var(--hover-color); */
+  color: var(--text-secondary-color);
 }
+
 .carousel-item img {
   height: 60vh;
   object-fit: cover;
@@ -590,6 +592,9 @@ footer h3 {
 
 /* Large Screens */
 @media (min-width: 992px) {
+  .nav-link:hover {
+    font-weight: 600;
+  }
   .card-horizontal-md {
     display: block;
   }
@@ -606,5 +611,21 @@ footer h3 {
   .card-horizontal-md .card-body {
     width: 100%;
     display: block;
+  }
+
+  .menu-section .card {
+    box-shadow:
+      0 6px 0 rgba(0, 0, 0, 0.06),
+      0 14px 35px rgba(58, 46, 42, 0.22);
+    transition:
+      box-shadow 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .menu-section .card:hover {
+    box-shadow:
+      0 10px 0 rgba(0, 0, 0, 0.08),
+      0 24px 55px rgba(58, 46, 42, 0.28);
+    transform: translateY(-8px);
   }
 }
