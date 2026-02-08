@@ -305,15 +305,14 @@
 }
 
 /* Menu */
-/* .menu-card-margin {
-  margin: 2rem 0;
-} */
 
 .custom-border {
   border-radius: 14px;
   overflow: hidden;
-  width: 75%;
-  margin: 0 auto;
+}
+
+.menu-section .card {
+  max-width: 400px;
 }
 
 .btn-color {
@@ -359,6 +358,12 @@ div.row {
 
 .discount-section h3 {
   color: white;
+}
+
+.discount-section button {
+  background-color: var(--btn-color);
+  color: var(--btn-text);
+  border: 1px solid var(--btn-color);
 }
 
 /* FAQ */
@@ -637,5 +642,9 @@ footer h3 {
 
   .menu-section .card-title {
     font-size: 1.5rem;
+  }
+
+  .discount-section {
+    min-height: 300px;
   }
 }
